@@ -10,7 +10,7 @@ class Context extends Component {
 <Container>
   <Row>
     <Col>
-    <Card bg="primary" text="white" style={{ width: '24rem', fontSize: 20 }}>
+    <Card bg="primary" text="white" style={styles.cardStyle}>
             <Card.Header>JavaScript</Card.Header>
             <Card.Body>
              <input type="checkbox" class="form-check-input" id="exampleCheck1" /> 
@@ -29,7 +29,7 @@ class Context extends Component {
           </Col>
           
      <Col> 
-     <Card bg="warning" text="white" style={{ width: '24rem', fontSize: 20 }}>
+     <Card bg="warning" text="white" style={styles.cardStyle}>
             <Card.Header>JavaScript</Card.Header>
             <Card.Body>
               <Card.Title>How do you use it?</Card.Title>
@@ -44,7 +44,7 @@ class Context extends Component {
           </Card>
           </Col>
     <Col> 
-     <Card bg="info" text="white" style={{ width: '18rem' }}>
+     <Card bg="info" text="white" style={styles.cardStyle}>
             <Card.Header>Javascript</Card.Header>
             <Card.Body>
               <Card.Title>Primary Card Title</Card.Title>
@@ -73,3 +73,13 @@ class Context extends Component {
 }
  
 export default Context;
+
+const styles= {
+  cardStyle: {
+    width: '18rem', 
+    height:'18rem', 
+    fontSize: 20, 
+    overflowY:"scroll"
+
+  }
+}
