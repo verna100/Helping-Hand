@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "heading": "Javascript",
+      "title": "What is it?",
+      "text": "JavaScript is a scripting language. It makes your web pages more dynamic. What does that mean? I'm dynamic and I'm not a webpage. Well JavaScript helps the page handle events (clicking the submit button), do math (you can add/subract/multiply and divide) and you can store information for use later (variables)."
+     
+    },
+    {
+      "id": 2,
+      "heading": "Javascript 2",
+      "title": "What is it 2?",
+      "text": "JavaScript is a scripting language. It makes your web pages more dynamic. What does that mean? I'm dynamic and I'm not a webpage. Well JavaScript helps the page handle events (clicking the submit button), do math (you can add/subract/multiply and divide) and you can store information for use later (variables)."
+     
+    },
+    {
+      "id": 3,
+      "heading": "Javascript 3",
+      "title": "What is it 3?",
+      "text": "JavaScript is a scripting language. It makes your web pages more dynamic. What does that mean? I'm dynamic and I'm not a webpage. Well JavaScript helps the page handle events (clicking the submit button), do math (you can add/subract/multiply and divide) and you can store information for use later (variables)."
+     
+    }
+
+
+]    

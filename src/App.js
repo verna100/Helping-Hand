@@ -6,15 +6,18 @@ import About from './components/About';
 import Contact from './components/Contact';
 import HTML from './components/HTML';
 import CSS from './components/CSS';
+// import Context from './components/Context';
+// import Wrapper from './components/Wrapper';
 import JavaScript from './components/JavaScript';
+// import javascripts from "./javascripts.json";
+
 // import Cards from './components/Card';
 
 class App extends Component {
   render() {
     return (
       <div className="container" style={styles.containerStyles}>
-    <Router>
-        <div>
+      <Router>
           <Header />
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <ul className="navbar-nav mr-auto">
@@ -34,10 +37,11 @@ class App extends Component {
               <Route path='/html' component={HTML} />
               <Route path='/css' component={CSS} />
               <Route path='/javascript' component={JavaScript} />
+            
           </Switch>
-          
-        </div>
         
+            <br />
+          
       </Router>
       {/* <JavaScript /> */}
       </div>
