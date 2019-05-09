@@ -1,9 +1,34 @@
 [
-    {
+  {
     "id": 1,
     "heading": "HTML",
     "title": "What is it?",
-    "text": "This is a test"
+    "text": "HTML stands for Hyper Text Markup Language. It is the standard language for creating web pages.",
+    "tag": "https://www.computerhope.com/jargon/h/html.htm"
+    
+  },
+  {
+    "id": 2,
+    "heading": "HTML",
+    "title": "History",
+    "text": "Tim Berners-Lee is credited with creating the language.",
+    "tag": "https://en.m.wikipedia.org/wiki/HTML"
+   
+  },
+  {
+    "id": 3,
+    "heading": "HTML",
+    "title": "How do I start?",
+    "text": "Every HTML document starts with the same exact format no matter what editor you use. It's <!DOCTYPE> <html><head></head><body></body></html>. Any context that is entered between the <body> tags will be shown (rendered) on the webpage.",
+    "tag": "https://www.w3schools.com/html/html_basic.asp"
+  },
+  {
+    "id": 4,
+    "heading": "HTML",
+    "title": "Tags",
+    "text": "HTML tags are where information gets broken down into sections on a page.  <h1>-<h6> are Headings. These are ranked from largest (1) to smallest (6) heading sizes.  <p> are used to identify paragraphs. <a> tags are used to identify weblinks. You surround web page addresses with <a href='insert web address here'></a>, and this will display a clickable link to that page.  <img> allows you to add images to your web page. These are the basics needed to create your first webpage.  There are others like <div> and <span> but those I will discuss in more detail",
+    "tag": "https://www.w3schools.com/tags/"
    
   }
+
 ]

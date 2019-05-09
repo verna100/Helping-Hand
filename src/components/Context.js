@@ -1,16 +1,16 @@
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col} from 'react-bootstrap';
 // import javascripts from './src/javascripts';
 
 function Context(props){ 
   // console.log(props);
   return ( 
     <div>
-      <Container>
+      <Container >
         <Row>
-          <Col>
-            <Card bg="danger" text="white" style={styles.cardStyle}>
-                <Card.Header>Language: {props.heading}</Card.Header>
+          <Col style={styles.cardStyle}>
+            <Card bg="primary" text="white" >
+                <Card.Header style={styles.cardHeader}>Language: {props.heading}</Card.Header>
                 <Card.Body>
                   <input type="checkbox" className="form-check-input" id="exampleCheck1" /> 
                 <Card.Title>Subject: {props.title}
@@ -18,6 +18,7 @@ function Context(props){
                 <Card.Text >
                   Summary: {props.text}
                 </Card.Text>
+                <Card.Link href={props.tag} target="_blank">See More</Card.Link>
                 </Card.Body>
                 </Card>
                 <br />
@@ -32,11 +33,17 @@ export default Context;
 
 const styles= {
   cardStyle: {
-    width: '20rem', 
+    width: '5rem', 
     height:'20rem', 
     fontSize: 20, 
-    overflowY:"scroll",
-    
-
+    // overflowY:"scroll",
+    overflow:"auto",
+    flexDirection: "column"
+  },
+  cardHeader: {
+    // position: "fixed",
+    // width: 200,
+    // background: "#bbb",
+    // height: 20
   }
-};
+}

@@ -16,6 +16,7 @@ class HTML extends Component {
             heading={html.heading}
             title={html.title}
             text={html.text}
+            tag={html.tag}
             />         
     ))}
        </div>
