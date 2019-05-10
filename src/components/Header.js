@@ -19,7 +19,7 @@ export default Header;
 const styles ={
     headerStyle:{
         fontSize: 86,
-        color: '#0A4609',
+        color: '#465d82',
         paddingLeft:0
 
     }
