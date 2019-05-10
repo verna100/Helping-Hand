@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import '../index.css'
 
 class About extends Component {
     state = {  }
     render() { 
         return ( 
-        <div>
+        <div style={styles.textStyle}>
            <h1>Helping Hand Welcomes You</h1>
+           <hr />
+           <br />
           <p>Hi, I created this app as a project to submit on my Github but when thinking of a project I wanted something useful.
             A bit about the creator. I'm a recent full stack web development bootcamp graduate and I often felt like I had no idea 
             what was going on. A lot of that had to do with the terminology that was being used. As someone who did not come from a technical
@@ -19,3 +22,19 @@ class About extends Component {
 }
  
 export default About;
+
+const GREY = "#9E9E9E";
+
+const styles ={
+  textStyle: {
+    background: '#F7E9F6',
+    width:1111,
+    paddingLeft:30,
+    paddingRight:30,
+    fontSize: 30,
+    marginTop:60,
+    // boxShadow: 20, 20
+    boxShadow: `10px 3px 10px ${GREY}`,
+    fontFamily: 'Source Code Pro'
+  }
+}
