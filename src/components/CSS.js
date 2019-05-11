@@ -16,6 +16,7 @@ class CSS extends Component {
             heading={css.heading}
             title={css.title}
             text={css.text}
+            tag={css.tag}
             />         
     ))}
        </div>

@@ -28,7 +28,7 @@ class Nav extends Component {
     render() { 
         return ( 
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="navbar navbar-expand-lg navbar-light" style={styles.navStyle}>
                 <ul className="navbar-nav mr-auto">
                     <li><Link to={'/'} className="nav-link"> Home </Link></li>   
                 </ul>
@@ -57,3 +57,10 @@ class Nav extends Component {
 }
  
 export default Nav;
+
+const styles ={
+  navStyle:{
+    backgroundColor:"#c7d0dd",
+    fontSize:20
+  }
+}

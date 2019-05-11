@@ -5,19 +5,19 @@ import { Card, Container, Row, Col} from 'react-bootstrap';
 function Context(props){ 
   // console.log(props);
   return ( 
-    <div>
+    <div >
       <Container style={styles.containerStyle}>
         <Row>
           <Col style={styles.cardStyle}>
-            <Card className= "card text-white bg-info mb-3" text="white" >
-                <Card.Header style={styles.cardHeader}>Language: {props.heading}</Card.Header>
+            <Card className= "card text-black bg- mb-3" text="black">
+                <Card.Header style={styles.cardHeader}>{props.heading}
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" 
+                style={{boxSizing: "border-box", padding: 0, width: 100, height: 18}}/>
+                </Card.Header>
                 <Card.Body>
-                  <input type="checkbox" className="form-check-input" id="exampleCheck1" /> 
                 <Card.Title>Subject: {props.title}
                 </Card.Title>
-                <Card.Text >
-                  Summary: {props.text}
-                </Card.Text>
+                <Card.Text > {props.text}</Card.Text>
                 <Card.Link href={props.tag} style={styles.cardLink} target="_blank">See More</Card.Link>
                 </Card.Body>
                 </Card>
@@ -34,22 +34,25 @@ export default Context;
 const styles= {
   containerStyle: {
     flexDirection:'column',
-    marginBottom:30
+    marginBottom:30,
+    color:'#2e4568'
 
   },
   cardStyle: {
-    width: '5rem', 
-    height:'20rem', 
+    width: 350, 
+    height:300, 
     fontSize: 20, 
-    overflowY:"scroll",
-    // overflow:"auto",
-    flexDirection: "row"
+    overflow:"auto",
+    flexDirection: "row",
+    marginTop:50,
+    
+    // color:'#2e4568'
   },
   cardHeader: {
-    // position: "fixed",
-    // width: 200,
-    // background: "#bbb",
-    // height: 20
+    height: 80,
+    background:'#2e4568',
+    color:'white'
+    
   },
   cardLink:{
     color:'black'
