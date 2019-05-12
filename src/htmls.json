@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "heading": "HTML",
+    "heading": "Mark as Read",
     "title": "What is it?",
     "text": "HTML stands for Hyper Text Markup Language. It is the standard language for creating web pages.",
     "tag": "https://www.computerhope.com/jargon/h/html.htm"
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "heading": "HTML",
+    "heading": "Mark as Read",
     "title": "History",
     "text": "Tim Berners-Lee is credited with creating the language.",
     "tag": "https://en.m.wikipedia.org/wiki/HTML"
@@ -17,17 +17,33 @@
   },
   {
     "id": 3,
-    "heading": "HTML",
+    "heading": "Mark as Read",
     "title": "How do I start?",
     "text": "Every HTML document starts with the same exact format no matter what editor you use. It's <!DOCTYPE> <html><head></head><body></body></html>. Any context that is entered between the <body> tags will be shown (rendered) on the webpage.",
     "tag": "https://www.w3schools.com/html/html_basic.asp"
   },
   {
     "id": 4,
-    "heading": "HTML",
+    "heading": "Mark as Read",
     "title": "Tags",
     "text": "HTML tags are where information gets broken down into sections on a page.  <h1>-<h6> are Headings. These are ranked from largest (1) to smallest (6) heading sizes.  <p> are used to identify paragraphs. <a> tags are used to identify weblinks. You surround web page addresses with <a href='insert web address here'></a>, and this will display a clickable link to that page.  <img> allows you to add images to your web page. These are the basics needed to create your first webpage.  There are others like <div> and <span> but those I will discuss in more detail",
     "tag": "https://www.w3schools.com/tags/"
+   
+  },
+  {
+    "id": 5,
+    "heading": "Mark as Read",
+    "title": "Div Tag",
+    "text": "A div is a storage container. What I mean by this is that you can have several divs on your webpage but those divs can hold different pieces of information. This makes it easier for styling purposes as well. Think of it a bunch of invisible boxes on a webpage.",
+    "tag": "http://www.tizag.com/htmlT/htmldiv.php"
+   
+  },
+  {
+    "id": 6,
+    "heading": "Mark as Read",
+    "title": "Span Tag",
+    "text": "A span tag is also a storage container in a way. I know it's confusing but let's dig deeper. A div is what is known as BLOCK element. When you put div tags around other tags on the page it separates those elements from the rest of the tags on the page. example: <div> <h1>Hello</h1> </div> <p>. As you can only the h1 is within the div here. That means it's in a separate block from the <p> tag. A SPAN tag is an INLINE element. This means that it only separates designated content within the tag. For example: <div><h1>Hello></h1><p>This is <span>my example</span> to show you what a span can do.</p></div>. If you see here the span is only around a couple of words (my example). It's within the context of the paragraph. This will allow us to be able to only reference those words and give them a color, change the font, etc, without effecting the rest of the paragraph tag.",
+    "tag": "https://www.tutorialspoint.com/html/html_span_tag.htm"
    
   }
 

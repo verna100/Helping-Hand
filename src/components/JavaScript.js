@@ -11,6 +11,7 @@ class JavaScript extends Component {
     render(){
         return ( 
         <div>
+          <h1 style={styles.headingStyle}>JavaScript</h1>
         {this.state.javascripts.map(javascript => (
         <Context 
             key={javascript.id}
@@ -26,6 +27,16 @@ class JavaScript extends Component {
 }
  
 export default JavaScript;
+
+const styles={
+  headingStyle:{
+    fontSize: 90,
+    marginTop:20,
+    textAlign:'center',
+    fontFamily: 'Baloo Bhai'
+
+  }
+}
 
 
 

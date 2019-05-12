@@ -88,7 +88,7 @@ const GREY = "#9E9E9E";
 const styles = {
   containerStyle: {
     background: "#C7DDE5",
-    width: 1111,
+    width: 980,
     height: 500,
     paddingLeft: 30,
     paddingRight: 30,

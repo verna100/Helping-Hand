@@ -9,6 +9,7 @@ class HTML extends Component {
     render(){
         return ( 
         <div>
+          <h1 style={styles.headingStyle}>HTML</h1>
         {this.state.htmls.map(html => (
         <Context 
             key={html.id}
@@ -17,6 +18,7 @@ class HTML extends Component {
             title={html.title}
             text={html.text}
             tag={html.tag}
+            image={html.image}
             />         
     ))}
        </div>
@@ -25,3 +27,13 @@ class HTML extends Component {
 }
 
 export default HTML;
+
+const styles={
+  headingStyle:{
+    fontSize: 90,
+    marginTop:20,
+    textAlign:'center',
+    fontFamily: 'Baloo Bhai'
+
+  }
+}

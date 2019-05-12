@@ -1,14 +1,14 @@
 [
     {
       "id": 1,
-      "heading": "Javascript",
+      "heading": "Mark as Read",
       "title": "What is it?",
       "text": "JavaScript is a scripting language. It makes your web pages more dynamic. What does that mean? I'm dynamic and I'm not a webpage. Well JavaScript helps the page handle events (clicking the submit button), do math (you can add/subract/multiply and divide) and you can store information for use later (variables)."
      
     },
     {
       "id": 2,
-      "heading": "Javascript",
+      "heading": "Mark as Read",
       "title": "How do you use it??",
       "text": "Good question, simple answer. You can write JavaScript within the HTML page by using the <script> tags. As you progress in coding you'll learn that for cleaner, more readable code you use a separate file saved as a .js file (milkshake.js). You take your current HTML which we will call iceCream.HTML and add a script tag referring to your Javascript file known as (milkshake.js). That simple you now have the necessary tools to take your iceCream(HTML) and turn it into a milkShake(javascript)."
      

@@ -9,6 +9,7 @@ class CSS extends Component {
     render(){
         return ( 
         <div>
+          <h1 style={styles.headingStyle}>CSS</h1>
         {this.state.css.map(css => (
         <Context 
             key={css.id}
@@ -25,3 +26,13 @@ class CSS extends Component {
 }
 
 export default CSS;
+
+const styles={
+  headingStyle:{
+    fontSize: 90,
+    marginTop:20,
+    textAlign:'center',
+    fontFamily: 'Baloo Bhai'
+
+  }
+}
