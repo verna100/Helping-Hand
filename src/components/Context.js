@@ -1,19 +1,16 @@
 import React from 'react';
-import { Card, Container, Row, Col} from 'react-bootstrap';
-// import javascripts from './src/javascripts';
-// import Animals from './onClick'
+import { Card, Container } from 'react-bootstrap';
+import Read from './ButtonFunc';
+
 
 function Context(props){ 
   // console.log(props);
   return ( 
     <div >
       <Container>
-        <Row>
-          <Col >
             <Card className= "card text-black bg- mb-3" text="black">
                 <Card.Header style={styles.cardHeader}>{props.title}
-                <input type="checkbox" className="form-check-input" id="exampleCheck1" 
-                style={{boxSizing: "border-box", padding: 0, width: 100, height: 18}}/>
+                <Read/>
                 </Card.Header>
                 <Card.Body className="rounded" style={styles.cardStyle}>
                 <Card.Title>
@@ -22,9 +19,6 @@ function Context(props){
                 <Card.Link href={props.tag} style={styles.cardLink} target="_blank">See More</Card.Link>
                 </Card.Body>
                 </Card>
-                <br />
-          </Col>
-        </Row>
       </Container>
     </div>
          );
@@ -44,7 +38,7 @@ const styles= {
   //   height:300, 
     fontSize: 20, 
     overflow:"auto",
-    flexDirection: "row",
+    flexDirection: "column",
     // marginTop:20,
     background:"#eff0f2",
     paddingLeft: 20,
