@@ -32,7 +32,8 @@ export default Read;
 const styles={
     buttonStyle:{
       opacity: 0.5,
-      background: 'pink'
+      background: 'yellow',
+      fontColor:'#black'
   
     }
   }
