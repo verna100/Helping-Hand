@@ -1,5 +1,12 @@
 import React, { Component }from 'react';
+import useLocalStorage from 'react-use-localstorage';
+// ----------------------------------------------------------------------------------------------------------
 
+
+// switchoff: function(){
+//   localStorage.setItem('state', 'off');
+//   this.setState({lights: 'off'}); 
+// },
 class Read extends Component {
     constructor(props) {
         super(props);
@@ -10,6 +17,7 @@ class Read extends Component {
       }
     
       handleClick() {
+        useLocalStorage.setItem('state', 'off');
         this.setState(state => ({
           isToggleOn: !state.isToggleOn
           
