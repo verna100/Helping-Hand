@@ -1,11 +1,48 @@
 import React, { Component } from 'react';
 
+// const API_KEY = process.env.REACT_APP_GITHUB_API_KEY;
+// console.log(process.env.REACT_APP_GITHUB_API_KEY)
+
+const API_KEY= `${process.env.REACT_APP_GITHUB_API_KEY}`
+
 class Home extends Component {
-    state = {  }
+  // Downloads oauth.js from CDN, pretty much like adding external scripts
+  componentDidMount () {
+    const oauthScript = document.createElement("script");
+    oauthScript.src = "https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js";
+
+    document.body.appendChild(oauthScript);
+  }
+
+  handleClick(e) {
+    // Prevents page reload
+    e.preventDefault();
+
+    // Initializes OAuth.io with API key
+    // Sign-up an account to get one
+    window.OAuth.initialize(API_KEY);
+
+    // Popup Github and ask for authorization
+    window.OAuth.popup('github').then((provider) => {
+
+      // Prompts 'welcome' message with User's name on successful login
+      // Check console logs for additional User info
+      provider.me().then((data) => {
+        console.log("data: ", data);
+        alert("Welcome " + data.name + "!");
+      });
+
+    });
+  }
     render() { 
         return ( 
-            <div style={styles.textStyle}>
-            <h1>Helping Hand Welcomes You</h1>
+          <div>
+            {/* // <div style={styles.textStyle}> */}
+
+              <button onClick={this.handleClick.bind(this)} className="btn btn-social btn-github" style={styles.buttonStyle}>
+                    <span className="fa fa-github"></span> Sign in with Github
+              </button>
+            {/* <h1>Helping Hand Welcomes You</h1>
             <hr />
             <br />
            <p>Hi, 
@@ -22,7 +59,9 @@ class Home extends Component {
              explain common phrases/ technologies, etc... in layman's terms without losing the context. 
              <br />
              Hope this helps on your journey!
-           </p>
+           </p> */}
+
+           
          </div>
           );
      }
@@ -45,6 +84,12 @@ class Home extends Component {
      // boxShadow: 20, 20
      boxShadow: `10px 3px 10px ${GREY}`,
      fontFamily: 'Source Code Pro'
+   },
+   buttonStyle:{
+     fontSize: 30,
+     color: '#fff',
+     align:'center'
+
    }
  }
     

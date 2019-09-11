@@ -6,7 +6,7 @@ class About extends Component {
     render() { 
         return ( 
         <div style={styles.textStyle}>
-           {/* <h1>Helping Hand Welcomes You</h1>
+           <h1>Helping Hand Welcomes You</h1>
            <hr />
            <br />
           <p>Hi, I created this app as a project to submit on my Github but when thinking of a project I wanted something useful.
@@ -15,7 +15,7 @@ class About extends Component {
             background, I often found myself asking WHAT ?? in my mind. Simple explanations when explained by someone who has worked in technology
             can still be full of terms that you've never heard before. I wanted to create this project based on the simplification. I hope to be able to 
             explain common phrases/ technologies, etc... in the most layman terms without losing the context. Hope this helps on your journey!
-          </p> */}
+          </p>
         </div>
          );
     }

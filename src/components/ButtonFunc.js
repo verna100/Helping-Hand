@@ -19,8 +19,7 @@ class Read extends Component {
     
       render() {
         return (
-          <button style={styles.buttonStyle} onClick={this.handleClick}
-          style={{float:"right"}}>
+          <button style={styles.buttonStyle} onClick={this.handleClick}>
             {this.state.isToggleOn ? 'UNREAD' : 'READ'}
           </button>
         );
@@ -32,8 +31,9 @@ export default Read;
 const styles={
     buttonStyle:{
       opacity: 0.5,
-      background: 'yellow',
-      fontColor:'#black'
+      // background: 'yellow',
+      fontColor:'#red',
+      float:'right'
   
     }
   }

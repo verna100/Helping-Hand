@@ -8,46 +8,46 @@ import Nav from './components/Navbar';
 
 
 
-class App extends Component {
-    // Downloads oauth.js from CDN, pretty much like adding external scripts
-    componentDidMount () {
-      const oauthScript = document.createElement("script");
-      oauthScript.src = "https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js";
-  
-      document.body.appendChild(oauthScript);
-    }
 
-    handleClick(e) {
-      // Prevents page reload
-      e.preventDefault();
+
+class App extends Component {
+    // // Downloads oauth.js from CDN, pretty much like adding external scripts
+    // componentDidMount () {
+    //   const oauthScript = document.createElement("script");
+    //   oauthScript.src = "https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js";
   
-      // Initializes OAuth.io with API key
-      // Sign-up an account to get one
-      window.OAuth.initialize('lnIHow_LKfxpVQJkwZRWZziZkck');
+    //   document.body.appendChild(oauthScript);
+    // }
+
+    // handleClick(e) {
+    //   // Prevents page reload
+    //   e.preventDefault();
   
-      // Popup Github and ask for authorization
-      window.OAuth.popup('github').then((provider) => {
+    //   // Initializes OAuth.io with API key
+    //   // Sign-up an account to get one
+    //   window.OAuth.initialize('lnIHow_LKfxpVQJkwZRWZziZkck');
   
-        // Prompts 'welcome' message with User's name on successful login
-        // Check console logs for additional User info
-        provider.me().then((data) => {
-          console.log("data: ", data);
-          alert("Welcome " + data.name + "!");
-        });
+    //   // Popup Github and ask for authorization
+    //   window.OAuth.popup('github').then((provider) => {
   
-        // You can also call Github's API using .get()
-        provider.get('/user').then((data) => {
-           console.log('self data:', data);
-        });
+    //     // Prompts 'welcome' message with User's name on successful login
+    //     // Check console logs for additional User info
+    //     provider.me().then((data) => {
+    //       console.log("data: ", data);
+    //       alert("Welcome " + data.name + "!");
+    //     });
   
-      });
-    }
+    //     // // You can also call Github's API using .get()
+    //     // provider.get('/user').then((data) => {
+    //     //    console.log('self data:', data);
+    //     // });
+  
+    //   });
+    // }
   render() {
     return (
       <div className="container" style={styles.containerStyles}>
-      <a href="" onClick={this.handleClick.bind(this)} className="btn btn-social btn-github">
-      <span className="fa fa-github"></span> Sign in with Github
-    </a>
+      
       
       <Router>
           <Header />
